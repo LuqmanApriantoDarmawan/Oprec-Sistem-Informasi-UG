@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oprec</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="/assets/images/logo.png" type="image/png">
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+</head>
+<style>
+    :root {
+        scroll-behavior: smooth;
+    }
+
+    .animate-bounce {
+        animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            transform: translateY(0);
+        }
+
+        40% {
+            transform: translateY(-20px);
+        }
+
+        60% {
+            transform: translateY(-10px);
+        }
+    }
+
+    .content-padding {
+        padding: 64px 0;
+    }
+</style>
+
+<body>
+
+    <!-- HEADER -->
+    <!-- HEADER -->
+    <!-- HEADER -->
+
+    <header id="navigation" class="fixed top-0 w-full z-10 bg-purple-800">
+        <nav>
+            <div
+                class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-4 sm:px-8 lg:px-16 text-white">
+                <!-- Logo -->
+                <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse" data-aos="fade-down">
+                    <span class="self-center text-xl sm:text-2xl font-semibold whitespace-nowrap leading-relaxed">SISTEM
+                        INFORMASI
+                        UG</span>
+                </a>
+
+                <!-- Hamburger Button for Mobile -->
+                <button type="button" data-aos-delay="100" data-aos="fade-down"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg lg:hidden hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                    aria-controls="navbar-default" aria-expanded="false"
+                    onclick="document.getElementById('navbar-default').classList.toggle('hidden')">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+
+                <!-- Menu Items -->
+                <div class="hidden w-full lg:block lg:w-auto" id="navbar-default" data-aos="fade-down">
+                    <ul
+                        class="font-medium flex flex-col p-4 lg:p-0 mt-4 border border-purple-500 rounded-lg  lg:flex-row lg:space-x-2 rtl:space-x-reverse lg:mt-0 lg:border-0">
+                        <li>
+                            <a href="#persyaratan"
+                                class="relative lg:mx-2 lg:w-fit w-full inline-block cursor-pointer rounded-md px-4 py-2 font-medium capitalize transition-colors hover:bg-purple-700 text-white"
+                                aria-current="page">Persyaratan</a>
+                        </li>
+                        <li>
+                            <a href="#alur_pendaftaran"
+                                class="relative lg:mx-2 lg:w-fit w-full inline-block cursor-pointer rounded-md px-4 py-2 font-medium capitalize transition-colors hover:bg-purple-700  text-white">Pendaftaran</a>
+                        </li>
+                        <li>
+                            <a href="#struktur_panitia"
+                                class="relative lg:mx-2 lg:w-fit w-full inline-block cursor-pointer rounded-md px-4 py-2 font-medium capitalize transition-colors hover:bg-purple-700  text-white">Struktur
+                                Kepanitiaan</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <!-- END HEADER -->
+    <!-- END HEADER -->
+    <!-- END HEADER -->
+
+    <main>
+        <!-- HERO SECTION -->
+        <!-- HERO SECTION -->
+        <!-- HERO SECTION -->
+
+        <section id="hero" class="relative pt-[4.45rem]" data-aos-delay="500" data-aos="fade-down">
+            <div
+                class="max-w-7xl content-padding mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 w-full items-center px-6 sm:px-8 lg:px-16 max-sm:pt-4">
+                <div class="space-y-6">
+                    <h1 class="text-4xl sm:text-6xl lg:text-6xl font-thin leading-none">
+                        Open Recruitment <br />
+                        <span class="font-bold">
+                            Panitia Gathering
+                        </span><br />
+                        Sistem Informasi UG
+                    </h1>
+
+                    <p class="text-sm sm:text-base text-gray-500 font-medium">
+                        Bergabunglah bersama kami untuk mempersolid dan menginspirasi! Jadilah bagian dari perubahan
+                        nyata
+                        mari sukseskan acara ini dan bersama kita wujudkan visi untuk mahasiswa dan
+                        masyarakat.
+
+                    </p>
+
+                    <div>
+                        <a href="#cta"
+                            class="inline-block text-center w-full sm:w-40 text-lg bg-purple-500 text-white px-6 py-2 rounded-lg font-semibold outline-none hover:bg-purple-600 transition-all shadow-[0px_5px_0px_0px_#7e22ce] active:shadow-[0px_2px_0px_0px_#7e22ce] transfrorm active:translate-y-[3px]">
+                            Daftar
+                        </a>
+                    </div>
+
+                </div>
+                <div>
+                    <img src="./assets/images/undraw_Team_collaboration_re_ow29.png"
+                        class="w-96 h-72 sm:w-full sm:h-[500px]" alt="agency">
+                </div>
+                <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2">
+                    <a href="#visi" scroll-down class="flex flex-col items-center gap-2 animate-bounce">
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" class="w-6 h-6 fill-gray-400"
+                            shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                            image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                            viewBox="0 0 512 298.04">
+                            <path fill-rule="nonzero"
+                                d="M12.08 70.78c-16.17-16.24-16.09-42.54.15-58.7 16.25-16.17 42.54-16.09 58.71.15L256 197.76 441.06 12.23c16.17-16.24 42.46-16.32 58.71-.15 16.24 16.16 16.32 42.46.15 58.7L285.27 285.96c-16.24 16.17-42.54 16.09-58.7-.15L12.08 70.78z" />
+                        </svg>
+                        <span class="text-sm text-gray-500 font-medium">Scroll down</span>
+                    </a>
+                </div>
+        </section>
+
+        <!-- END HERO SECTION -->
+        <!-- END HERO SECTION -->
+        <!-- END HERO SECTION -->
+
+
+        <!-- VISI DAN MISI SECTION -->
+        <!-- VISI DAN MISI SECTION -->
+        <!-- VISI DAN MISI SECTION -->
+
+        <section id="visi" class="pt-16 sm:pt-32" data-aos-delay="200" data-aos="fade-down">
+            <div class="mx-auto max-w-7xl px-6 sm:px-8 lg:px-16 w-full">
+                <div
+                    class="flex justify-center items-center flex-col gap-x-0 gap-y-6 lg:gap-y-0 lg:flex-row lg:justify-between max-md:max-w-lg max-md:mx-auto">
+                    <div class="relative w-full lg:w-2/4">
+                        <h2
+                            class="text-4xl font-bold text-gray-900 leading-[3.25rem] lg:mb-6 mx-auto max-w-max lg:max-w-md lg:mx-0 text-center">
+                            VISI ACARA <br> GATHERING SI</h2>
+                    </div>
+                    <div class="relative w-full text-center lg:text-left lg:w-2/4 text-pretty">
+                        <p class="text-lg font-normal text-gray-500 mb-5 leading-relaxed">Menjadi
+                            wadah/tempat yang adil dan inklusif,di mana setiap cabang dan pusat yang seharusnya bersama-
+                            sama tumbuh, berinovasi, dan berkontribusi secara seimbang dalam mencapai tujuan bersama.
+                        </p>
+                        <a href="#cta"
+                            class="flex flex-row items-center justify-center gap-2 text-xl font-semibold text-purple-600 lg:justify-start hover:text-purple-700 ">Daftar
+                            yuk!
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.5 15L11.0858 11.4142C11.7525 10.7475 12.0858 10.4142 12.0858 10C12.0858 9.58579 11.7525 9.25245 11.0858 8.58579L7.5 5"
+                                    stroke="#9333ea" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+            </div>
+        </section>
+
+        <!-- END VISI DAN MISI SECTION -->
+        <!-- END VISI DAN MISI SECTION -->
+        <!-- END VISI DAN MISI SECTION -->
+
+        <!-- PERSYARATAN SECTION -->
+        <!-- PERSYARATAN SECTION -->
+        <!-- PERSYARATAN SECTION -->
+
+        <section id="persyaratan" class="pt-16 sm:pt-32" data-aos-delay="300" data-aos="fade-down">
+            <div class="bg-purple-700">
+                <div class="max-w-7xl py-24 mx-auto w-full px-6 sm:px-8 lg:px-16 flex flex-col gap-8">
+                    <div class="max-w-4xl mx-auto">
+                        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">
+                            <span class="text-white">PERSYARATAN</span>
+                            <span class="text-purple-200">PENDAFTARAN</span>
+                        </h2>
+                        <div
+                            class="rounded-lg sm:border-b-8 sm:border-l-8 border-l-4 border-b-4 bg-purple-900/80 backdrop-blur-md border-purple-950/40 p-6 space-y-4 shadow-lg">
+                            <div class="flex items-start gap-3">
+                                <div class="mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                                        class="fill-purple-300 flex-shrink-0" viewBox="0 0 30 30">
+                                        <path
+                                            d="M 26.980469 5.9902344 A 1.0001 1.0001 0 0 0 26.292969 6.2929688 L 11 21.585938 L 4.7070312 15.292969 A 1.0001 1.0001 0 1 0 3.2929688 16.707031 L 10.292969 23.707031 A 1.0001 1.0001 0 0 0 11.707031 23.707031 L 27.707031 7.7070312 A 1.0001 1.0001 0 0 0 26.980469 5.9902344 z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="text-sm md:text-base text-purple-100">
+                                    Mahasiswa Aktif Jurusan Sistem Informasi Universitas
+                                    Gunadarma
+                                    angkatan 2023
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                                        class="fill-purple-300 flex-shrink-0" viewBox="0 0 30 30">
+                                        <path
+                                            d="M 26.980469 5.9902344 A 1.0001 1.0001 0 0 0 26.292969 6.2929688 L 11 21.585938 L 4.7070312 15.292969 A 1.0001 1.0001 0 1 0 3.2929688 16.707031 L 10.292969 23.707031 A 1.0001 1.0001 0 0 0 11.707031 23.707031 L 27.707031 7.7070312 A 1.0001 1.0001 0 0 0 26.980469 5.9902344 z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="text-sm md:text-base text-purple-100">
+                                    Mampu berkomunikasi dan bekerja sama dengan baik dalam tim
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                                        class="fill-purple-300 flex-shrink-0" viewBox="0 0 30 30">
+                                        <path
+                                            d="M 26.980469 5.9902344 A 1.0001 1.0001 0 0 0 26.292969 6.2929688 L 11 21.585938 L 4.7070312 15.292969 A 1.0001 1.0001 0 1 0 3.2929688 16.707031 L 10.292969 23.707031 A 1.0001 1.0001 0 0 0 11.707031 23.707031 L 27.707031 7.7070312 A 1.0001 1.0001 0 0 0 26.980469 5.9902344 z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="text-sm md:text-base text-purple-100">
+                                    Sehat Jasmani dan Rohani
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                                        class="fill-purple-300 flex-shrink-0" viewBox="0 0 30 30">
+                                        <path
+                                            d="M 26.980469 5.9902344 A 1.0001 1.0001 0 0 0 26.292969 6.2929688 L 11 21.585938 L 4.7070312 15.292969 A 1.0001 1.0001 0 1 0 3.2929688 16.707031 L 10.292969 23.707031 A 1.0001 1.0001 0 0 0 11.707031 23.707031 L 27.707031 7.7070312 A 1.0001 1.0001 0 0 0 26.980469 5.9902344 z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="text-sm md:text-base text-purple-100">
+                                    Berkomitmen dalam memberikan kontribusi
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20"
+                                        class="fill-purple-300 flex-shrink-0" viewBox="0 0 30 30">
+                                        <path
+                                            d="M 26.980469 5.9902344 A 1.0001 1.0001 0 0 0 26.292969 6.2929688 L 11 21.585938 L 4.7070312 15.292969 A 1.0001 1.0001 0 1 0 3.2929688 16.707031 L 10.292969 23.707031 A 1.0001 1.0001 0 0 0 11.707031 23.707031 L 27.707031 7.7070312 A 1.0001 1.0001 0 0 0 26.980469 5.9902344 z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="text-sm md:text-base text-purple-100">
+                                    Melengkapi pengisian G-form
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- END PERSYARATAN SECTION -->
+        <!-- END PERSYARATAN SECTION -->
+        <!-- END PERSYARATAN SECTION -->
+
+        <!-- ALUR PENDAFTARAN SECTION -->
+        <!-- ALUR PENDAFTARAN SECTION -->
+        <!-- ALUR PENDAFTARAN SECTION -->
+        <section id="alur_pendaftaran" class="pt-20 sm:pt-32" data-aos-delay="300" data-aos="fade-down">
+            <div class="max-w-7xl mx-auto w-full px-6 sm:px-8 lg:px-16">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold md:text-5xl text-gray-800">Alur Pendaftaran</h2>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-8 items-center justify-center w-full">
+                    <div class="relative mx-auto">
+                        <img src="./assets/images/4240093.png" alt="People analyzing data visualization"
+                            class="rounded-lg w-96" />
+                    </div>
+
+                    <div class="space-y-4">
+                        <div
+                            class="border rounded-lg border-purple-800 shadow-none hover:bg-purple-700 hover:-translate-y-2 transition-all duration-500 group cursor-pointer">
+                            <div class="flex items-center gap-4 p-4">
+                                <div
+                                    class="flex h-10 w-10 border-2 border-purple-600 shrink-0 items-center justify-center rounded-full group-hover:border-white">
+                                    <span class="text-lg font-bold text-purple-600 group-hover:text-white">1</span>
+                                </div>
+                                <div class="space-y-1">
+                                    <h3 class="font-medium group-hover:text-white">Isi Formulir</h3>
+                                    <p class="text-sm text-gray-800 group-hover:text-white">
+                                        Daftar dengan mengisi formulir pendaftaran dengan data lengkap.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="border rounded-lg border-purple-800 shadow-none hover:bg-purple-700 hover:-translate-y-2 transition-all duration-500 group cursor-pointer">
+                            <div class="flex items-center gap-4 p-4">
+                                <div
+                                    class="flex h-10 w-10 border-2 border-purple-600 shrink-0 items-center justify-center rounded-full group-hover:border-white">
+                                    <span class="text-lg font-bold text-purple-600 group-hover:text-white">2</span>
+                                </div>
+                                <div class="space-y-1">
+                                    <h3 class="font-medium group-hover:text-white">Upload Dokumen</h3>
+                                    <p class="text-sm text-gray-800 group-hover:text-white">
+                                        Unggah dokumen-dokumen yang dibutuhkan sesuai ketentuan.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="border rounded-lg border-purple-600 shadow-none hover:bg-purple-700 hover:-translate-y-2 transition-all duration-500 group cursor-pointer">
+                            <div class="flex gap-4 p-4">
+                                <div
+                                    class="flex h-10 w-10 border-2 border-purple-600 shrink-0 items-center justify-center rounded-full group-hover:border-white">
+                                    <span class="text-lg font-bold text-purple-600 group-hover:text-white">3</span>
+                                </div>
+                                <div class="space-y-1">
+                                    <h3 class="font-medium group-hover:text-white">Verifikasi</h3>
+                                    <p class="text-sm text-gray-800 group-hover:text-white">
+                                        Tim kami akan memeriksa kelengkapan data dan dokumen.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="border rounded-lg border-purple-600 shadow-none hover:bg-purple-700 hover:-translate-y-2 transition-all duration-500 group cursor-pointer">
+                            <div class="flex gap-4 p-4">
+                                <div
+                                    class="flex h-10 w-10 border-2 border-purple-600 shrink-0 items-center justify-center rounded-full group-hover:border-white">
+                                    <span class="text-lg font-bold text-purple-600 group-hover:text-white">4</span>
+                                </div>
+                                <div class="space-y-1">
+                                    <h3 class="font-medium group-hover:text-white">Pengumuman</h3>
+                                    <p class="text-sm text-gray-800 group-hover:text-white">
+                                        Hasil pendaftaran akan diumumkan melalui email atau website.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- END ALUR PENDAFTARAN SECTION -->
+        <!-- END ALUR PENDAFTARAN SECTION -->
+        <!-- END ALUR PENDAFTARAN SECTION -->
+
+
+        <!-- CTA SECTION -->
+        <!-- CTA SECTION -->
+        <!-- CTA SECTION -->
+
+        <section id="cta" class="pt-16 sm:pt-32" data-aos-delay="200" data-aos="fade-up">
+            <div class="relative max-w-7xl mx-auto w-full h-[500px] sm:h-96">
+                <div class="absolute inset-0 bg-gradient-to-br from-zinc-900 via-slate-700 to-purple-900 sm:rounded-xl">
+                    <div class="relative flex items-center justify-center h-full px-6 sm:p-0">
+                        <div class="mx-auto max-w-2xl text-center">
+                            <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+                                AYO DAFTAR SEKARANG!
+                            </h2>
+                            <p class="mt-6 text-lg leading-8 text-gray-300">
+                                Are you ready to join committee gathering? <br> Yuk isi G-Form
+                                sekarang!
+                                yang diperlukan!
+                            </p>
+
+                            <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdgkk2THmhJDloZNAULWtQvy1uxDDjA7PAIWUAgP1EuxJMdwQ/viewform"
+                                    class="inline-block bg-gradient-to-r from-indigo-500 to-purple-700 hover:from-indigo-500/80 hover:to-purple-600 text-white font-bold transition-all duration-200 hover:-translate-y-0.5 transform active:translate-y-0.5 active:shadow-none rounded-md px-4 py-3 
+                         shadow-[-2px_6px_0_0_#6738b0,0_0_0_0_#5b21b6]">
+                                    DAFTAR KEPANITIAAN
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- END CTA SECTION -->
+        <!-- END CTA SECTION -->
+        <!-- END CTA SECTION -->
+
+        <!-- DIVISI SECTION -->
+        <!-- DIVISI SECTION -->
+        <!-- DIVISI SECTION -->
+
+        <section id="struktur_panitia" class="py-20 sm:py-32" data-aos-delay="300" data-aos="fade-up">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">STRUKTUR KEPANITIAAN</h2>
+                <div class="flex flex-wrap justify-center gap-8">
+
+                    <!-- Divisi Acara -->
+                    <div
+                        class="group relative flex flex-grow-0 flex-shrink-0 w-full sm:w-[calc(50%-0.5rem)] md:w-80 cursor-pointer basis-80 flex-col items-center bg-gray-100 rounded-2xl p-6 transition-all duration-500 shadow-lg hover:bg-purple-600 hover:-translate-y-2">
+                        <div class="bg-white rounded-full flex justify-center items-center mb-4 w-14 h-14">
+                            <!-- Icon Calendar -->
+                            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3M16 7V3M5 11h14M3 5h18v16H3V5z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 group-hover:text-white mb-2">DIVISI ACARA</h3>
+                        <p class="text-gray-600 group-hover:text-white text-center">Menyusun, merencanakan, dan mengatur
+                            kegiatan acara dari awal hingga akhir, termasuk penjadwalan dan koordinasi kegiatan.
+                            Bertanggung jawab untuk memastikan acara berjalan sesuai rencana</p>
+                    </div>
+
+                    <!-- Divisi Perlengkapan -->
+                    <div
+                        class="group relative flex flex-grow-0 flex-shrink-0 w-full sm:w-[calc(50%-0.5rem)] md:w-80 cursor-pointer basis-80 flex-col items-center bg-gray-100 rounded-2xl p-6 transition-all duration-500 shadow-lg hover:bg-purple-600 hover:-translate-y-2">
+                        <div class="bg-white rounded-full flex justify-center items-center mb-4 w-14 h-14">
+                            <!-- Icon Tools (Wrench) -->
+                            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15.232 5.232l3.536 3.536M4 16.222V20h3.778l11.678-11.678a2 2 0 00-2.828-2.828L4 16.222z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 group-hover:text-white mb-2">DIVISI PERLENGKAPAN
+                        </h3>
+                        <p class="text-gray-600 group-hover:text-white text-center">Mengurus kebutuhan logistik dan
+                            perlengkapan yang diperlukan untuk acara, mulai dari persiapan hingga penyimpanan. Termasuk
+                            dalam tugas ini adalah pengadaan, distribusi, dan pengelolaan peralatan</p>
+                    </div>
+
+                    <!-- Divisi Keamanan -->
+                    <div
+                        class="group relative flex flex-grow-0 flex-shrink-0 w-full sm:w-[calc(50%-0.5rem)] md:w-80 cursor-pointer basis-80 flex-col items-center bg-gray-100 rounded-2xl p-6 transition-all duration-500 shadow-lg hover:bg-purple-600 hover:-translate-y-2">
+                        <div class="bg-white rounded-full flex justify-center items-center mb-4 w-14 h-14">
+                            <!-- Icon Shield -->
+                            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 22s8-4 8-10V5l-8-4-8 4v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 group-hover:text-white mb-2">DIVISI KEAMANAN</h3>
+                        <p class="text-gray-600 group-hover:text-white text-center">Menjaga keamanan dan ketertiban
+                            selama acara berlangsung. Bertanggung jawab atas keselamatan peserta dan mencegah hal-hal
+                            yang tidak diinginkan</p>
+                    </div>
+
+                    <!-- Divisi PDDxHumas -->
+                    <div
+                        class="group relative flex flex-grow-0 flex-shrink-0 w-full sm:w-[calc(50%-0.5rem)] md:w-80 cursor-pointer basis-80 flex-col items-center bg-gray-100 rounded-2xl p-6 transition-all duration-500 shadow-lg hover:bg-purple-600 hover:-translate-y-2">
+                        <div class="bg-white rounded-full flex justify-center items-center mb-4 w-14 h-14">
+                            <!-- Icon Megaphone (Humas) -->
+                            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 15V9a3 3 0 10-6 0v6a3 3 0 006 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M18 8l2-2m0 0l2 2m-2-2v6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 group-hover:text-white mb-2">DIVISI PDDxHUMAS
+                        </h3>
+                        <p class="text-gray-600 group-hover:text-white text-center">Mengelola publikasi, dokumentasi,
+                            dan hubungan masyarakat. Bertugas menyampaikan informasi dan berkoordinasi dengan media
+                            serta memberikan pengumuman hasil pendaftaran melalui email atau website</p>
+                    </div>
+
+                    <!-- Divisi Konsumsi -->
+                    <div
+                        class="group relative flex flex-grow-0 flex-shrink-0 w-full sm:w-[calc(50%-0.5rem)] md:w-80 cursor-pointer basis-80 flex-col items-center bg-gray-100 rounded-2xl p-6 transition-all duration-500 shadow-lg hover:bg-purple-600 hover:-translate-y-2">
+                        <div class="bg-white rounded-full flex justify-center items-center mb-4 w-14 h-14">
+                            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 3v13a2 2 0 002 2h0a2 2 0 002-2V3M15 3v10m0 4a1.5 1.5 0 003 0v-4h-3V3M18 14h2">
+                                </path>
+                            </svg>
+                            <!-- Icon Utensils (Konsumsi) -->
+
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 group-hover:text-white mb-2">DIVISI KONSUMSI</h3>
+                        <p class="text-gray-600 group-hover:text-white text-center">Menyediakan kebutuhan konsumsi untuk
+                            peserta dan panitia selama acara berlangsung. Melakukan perencanaan menu, koordinasi dengan
+                            vendor makanan, dan memastikan distribusi konsumsi tepat waktu</p>
+                    </div>
+
+                    <!-- Divisi Sponsorship -->
+                    <div
+                        class="group relative flex flex-grow-0 flex-shrink-0 w-full sm:w-[calc(50%-0.5rem)] md:w-80 cursor-pointer basis-80 flex-col items-center bg-gray-100 rounded-2xl p-6 transition-all duration-500 shadow-lg hover:bg-purple-600 hover:-translate-y-2">
+                        <div class="bg-white rounded-full flex justify-center items-center mb-4 w-14 h-14">
+                            <!-- Icon Handshake (Sponsorship) -->
+                            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 14l4 4 2-2-4-4-2 2zM14 8l-2 2 4 4 2-2-4-4zm0 0L9 13l4 4 5-5m-2-2H4a1 1 0 01-1-1v-2a1 1 0 011-1h5">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 group-hover:text-white mb-2">DIVISI SPONSORSHIP
+                        </h3>
+                        <p class="text-gray-600 group-hover:text-white text-center">Mengelola sponsorship dan mencari
+                            dukungan dari pihak eksternal. Berkomunikasi dengan calon sponsor, menyusun proposal, dan
+                            menjaga hubungan baik dengan sponsor yang mendukung acara</p>
+                    </div>
+
+                    <!-- Divisi Dana Usaha -->
+                    <div
+                        class="group relative flex flex-grow-0 flex-shrink-0 w-full sm:w-[calc(50%-0.5rem)] md:w-80 cursor-pointer basis-80 flex-col items-center bg-gray-100 rounded-2xl p-6 transition-all duration-500 shadow-lg hover:bg-purple-600 hover:-translate-y-2">
+                        <div class="bg-white rounded-full flex justify-center items-center mb-4 w-14 h-14">
+                            <!-- Icon Money (Dana Usaha) -->
+                            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 11V5a2 2 0 012-2h8a2 2 0 012 2v6M9 21h6a2 2 0 002-2v-2a2 2 0 00-2-2H9a2 2 0 00-2 2v2a2 2 0 002 2zm3-10v4">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 group-hover:text-white mb-2">DIVISI DANA USAHA
+                        </h3>
+                        <p class="text-gray-600 group-hover:text-white text-center">Mengatur dan mencari sumber
+                            pendanaan untuk acara, termasuk membuat kegiatan fundraising atau menjalin kerjasama dengan
+                            pihak luar. Divisi ini berfokus pada penggalangan dana agar kebutuhan finansial acara
+                            tercukupi</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- END DIVISI SECTION -->
+        <!-- END DIVISI SECTION -->
+        <!-- END DIVISI SECTION -->
+
+
+    </main>
+
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <footer class="pt-12 bg-gray-100 border-t">
+        <div
+            class="container grid grid-cols-1 gap-8 px-4 md:grid-cols-2 lg:grid-cols-3 md:px-6 py-2 max-w-7xl mx-auto w-full">
+            <div class="space-y-4">
+                <a href="/" class="flex items-center space-x-2">
+
+                    <span class="font-bold text-lg">SISTEM INFORMASI</span>
+                </a>
+                <p class="text-sm text-gray-600">
+                    Panitia Gathering Sistem Informasi Universitas Gunadarma
+                    Let's Join to be part of our event
+                </p>
+                <div class="flex space-x-4 items-center">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 132.004 132" class="size-8">
+                            <defs>
+                                <linearGradient id="b">
+                                    <stop offset="0" stop-color="#3771c8" />
+                                    <stop stop-color="#3771c8" offset=".128" />
+                                    <stop offset="1" stop-color="#60f" stop-opacity="0" />
+                                </linearGradient>
+                                <linearGradient id="a">
+                                    <stop offset="0" stop-color="#fd5" />
+                                    <stop offset=".1" stop-color="#fd5" />
+                                    <stop offset=".5" stop-color="#ff543e" />
+                                    <stop offset="1" stop-color="#c837ab" />
+                                </linearGradient>
+                                <radialGradient id="c" cx="158.429" cy="578.088" r="65" xlink:href="#a"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="matrix(0 -1.98198 1.8439 0 -1031.402 454.004)" fx="158.429"
+                                    fy="578.088" />
+                                <radialGradient id="d" cx="147.694" cy="473.455" r="65" xlink:href="#b"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="matrix(.17394 .86872 -3.5818 .71718 1648.348 -458.493)"
+                                    fx="147.694" fy="473.455" />
+                            </defs>
+                            <path fill="url(#c)"
+                                d="M65.03 0C37.888 0 29.95.028 28.407.156c-5.57.463-9.036 1.34-12.812 3.22-2.91 1.445-5.205 3.12-7.47 5.468C4 13.126 1.5 18.394.595 24.656c-.44 3.04-.568 3.66-.594 19.188-.01 5.176 0 11.988 0 21.125 0 27.12.03 35.05.16 36.59.45 5.42 1.3 8.83 3.1 12.56 3.44 7.14 10.01 12.5 17.75 14.5 2.68.69 5.64 1.07 9.44 1.25 1.61.07 18.02.12 34.44.12 16.42 0 32.84-.02 34.41-.1 4.4-.207 6.955-.55 9.78-1.28 7.79-2.01 14.24-7.29 17.75-14.53 1.765-3.64 2.66-7.18 3.065-12.317.088-1.12.125-18.977.125-36.81 0-17.836-.04-35.66-.128-36.78-.41-5.22-1.305-8.73-3.127-12.44-1.495-3.037-3.155-5.305-5.565-7.624C116.9 4 111.64 1.5 105.372.596 102.335.157 101.73.027 86.19 0H65.03z"
+                                transform="translate(1.004 1)" />
+                            <path fill="url(#d)"
+                                d="M65.03 0C37.888 0 29.95.028 28.407.156c-5.57.463-9.036 1.34-12.812 3.22-2.91 1.445-5.205 3.12-7.47 5.468C4 13.126 1.5 18.394.595 24.656c-.44 3.04-.568 3.66-.594 19.188-.01 5.176 0 11.988 0 21.125 0 27.12.03 35.05.16 36.59.45 5.42 1.3 8.83 3.1 12.56 3.44 7.14 10.01 12.5 17.75 14.5 2.68.69 5.64 1.07 9.44 1.25 1.61.07 18.02.12 34.44.12 16.42 0 32.84-.02 34.41-.1 4.4-.207 6.955-.55 9.78-1.28 7.79-2.01 14.24-7.29 17.75-14.53 1.765-3.64 2.66-7.18 3.065-12.317.088-1.12.125-18.977.125-36.81 0-17.836-.04-35.66-.128-36.78-.41-5.22-1.305-8.73-3.127-12.44-1.495-3.037-3.155-5.305-5.565-7.624C116.9 4 111.64 1.5 105.372.596 102.335.157 101.73.027 86.19 0H65.03z"
+                                transform="translate(1.004 1)" />
+                            <path fill="#fff"
+                                d="M66.004 18c-13.036 0-14.672.057-19.792.29-5.11.234-8.598 1.043-11.65 2.23-3.157 1.226-5.835 2.866-8.503 5.535-2.67 2.668-4.31 5.346-5.54 8.502-1.19 3.053-2 6.542-2.23 11.65C18.06 51.327 18 52.964 18 66s.058 14.667.29 19.787c.235 5.11 1.044 8.598 2.23 11.65 1.227 3.157 2.867 5.835 5.536 8.503 2.667 2.67 5.345 4.314 8.5 5.54 3.054 1.187 6.543 1.996 11.652 2.23 5.12.233 6.755.29 19.79.29 13.037 0 14.668-.057 19.788-.29 5.11-.234 8.602-1.043 11.656-2.23 3.156-1.226 5.83-2.87 8.497-5.54 2.67-2.668 4.31-5.346 5.54-8.502 1.18-3.053 1.99-6.542 2.23-11.65.23-5.12.29-6.752.29-19.788 0-13.036-.06-14.672-.29-19.792-.24-5.11-1.05-8.598-2.23-11.65-1.23-3.157-2.87-5.835-5.54-8.503-2.67-2.67-5.34-4.31-8.5-5.535-3.06-1.187-6.55-1.996-11.66-2.23-5.12-.233-6.75-.29-19.79-.29zm-4.306 8.65c1.278-.002 2.704 0 4.306 0 12.816 0 14.335.046 19.396.276 4.68.214 7.22.996 8.912 1.653 2.24.87 3.837 1.91 5.516 3.59 1.68 1.68 2.72 3.28 3.592 5.52.657 1.69 1.44 4.23 1.653 8.91.23 5.06.28 6.58.28 19.39s-.05 14.33-.28 19.39c-.214 4.68-.996 7.22-1.653 8.91-.87 2.24-1.912 3.835-3.592 5.514-1.68 1.68-3.275 2.72-5.516 3.59-1.69.66-4.232 1.44-8.912 1.654-5.06.23-6.58.28-19.396.28-12.817 0-14.336-.05-19.396-.28-4.68-.216-7.22-.998-8.913-1.655-2.24-.87-3.84-1.91-5.52-3.59-1.68-1.68-2.72-3.276-3.592-5.517-.657-1.69-1.44-4.23-1.653-8.91-.23-5.06-.276-6.58-.276-19.398s.046-14.33.276-19.39c.214-4.68.996-7.22 1.653-8.912.87-2.24 1.912-3.84 3.592-5.52 1.68-1.68 3.28-2.72 5.52-3.592 1.692-.66 4.233-1.44 8.913-1.655 4.428-.2 6.144-.26 15.09-.27zm29.928 7.97c-3.18 0-5.76 2.577-5.76 5.758 0 3.18 2.58 5.76 5.76 5.76 3.18 0 5.76-2.58 5.76-5.76 0-3.18-2.58-5.76-5.76-5.76zm-25.622 6.73c-13.613 0-24.65 11.037-24.65 24.65 0 13.613 11.037 24.645 24.65 24.645C79.617 90.645 90.65 79.613 90.65 66S79.616 41.35 66.003 41.35zm0 8.65c8.836 0 16 7.163 16 16 0 8.836-7.164 16-16 16-8.837 0-16-7.164-16-16 0-8.837 7.163-16 16-16z" />
+                        </svg>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-black transition-colors">
+                        <svg id='TikTok_24' class="size-10" viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'
+                            xmlns:xlink='http://www.w3.org/1999/xlink'>
+                            <rect width='24' height='24' stroke='none' fill='#000000' opacity='0' />
+
+
+                            <g transform="matrix(0.42 0 0 0.42 12 12)">
+                                <g transform="matrix(1 0 0 1 -0.32 0.54)">
+                                    <path
+                                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(1,1,1); fill-rule: nonzero; opacity: 1;"
+                                        transform=" translate(-23.68, -24.54)"
+                                        d="M 36.335 46.238 L 11.067 46.238 C 5.3340000000000005 46.238 1.795 41.944 1.795 36.211 C 1.795 36.211 2.428 31.723999999999997 1.795 21.112 C 1.6709999999999998 19.04 2.385 13.868999999999998 2.385 13.868999999999998 C 2.385 8.136 6.348 3.7479999999999976 12.081999999999999 3.7479999999999976 C 12.081999999999999 3.7479999999999976 20.441 3.0829999999999975 23.028999999999996 3.2759999999999976 C 30.977999999999994 3.8699999999999974 34.29599999999999 2.8699999999999974 35.980999999999995 2.8509999999999978 C 42.328 2.78 45.3 7.734 45.3 13.467 C 45.3 13.467 45.583 24.272 45.583 26.113 C 45.583 30.124 44.97 36.116 44.97 36.116 C 45.583 41.071 42.068 46.238 36.335 46.238 z"
+                                        stroke-linecap="round" />
+                                </g>
+                                <g transform="matrix(1 0 0 1 -0.3 1.03)">
+                                    <path
+                                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(214,229,229); fill-rule: nonzero; opacity: 1;"
+                                        transform=" translate(-23.7, -25.03)"
+                                        d="M 37.053 21.946 C 37.159 21.927000000000003 37.281 21.938000000000002 37.388 21.943 C 37.64 21.484 37.355 20.601000000000003 37.299 20.098000000000003 C 37.211999999999996 19.329000000000004 37.126 18.559 37.039 17.790000000000003 C 37.019 17.611000000000004 36.989000000000004 17.413000000000004 36.85 17.299000000000003 C 36.774 17.236000000000004 36.676 17.209000000000003 36.58 17.183000000000003 C 35.675999999999995 16.938000000000002 34.771 16.692000000000004 33.867 16.447000000000003 C 33.477999999999994 16.341 33.084999999999994 16.235000000000003 32.727999999999994 16.048000000000002 C 31.815999999999995 15.571000000000002 31.242999999999995 14.635000000000002 30.790999999999993 13.71 C 30.401999999999994 12.914000000000001 30.067999999999994 12.092 29.790999999999993 11.251000000000001 C 29.561999999999994 10.554000000000002 29.743999999999993 9.908000000000001 28.935999999999993 9.862000000000002 C 28.43199999999999 9.833000000000002 27.927999999999994 9.811000000000002 27.423999999999992 9.795000000000002 C 26.354999999999993 9.761000000000001 25.279999999999994 9.786000000000001 24.215999999999994 9.763000000000002 C 23.956999999999994 10.687000000000001 24.072999999999993 11.705000000000002 24.026999999999994 12.655000000000001 C 23.972999999999995 13.782000000000002 23.944999999999993 14.91 23.941999999999993 16.038 C 23.93799999999999 18.294 24.036999999999992 20.55 24.23999999999999 22.797 C 24.313999999999993 23.618000000000002 24.40199999999999 24.439 24.44499999999999 25.262 C 24.49799999999999 26.297 24.47899999999999 27.333000000000002 24.45899999999999 28.369 C 24.44099999999999 29.332 24.42099999999999 30.305 24.175999999999988 31.236 C 23.88299999999999 32.347 23.264999999999986 33.371 22.41799999999999 34.148 C 22.06899999999999 34.468 21.67699999999999 34.75 21.23599999999999 34.922000000000004 C 20.38299999999999 35.254000000000005 19.41999999999999 35.150000000000006 18.53599999999999 34.911 C 17.77299999999999 34.705 17.01799999999999 34.393 16.44599999999999 33.849000000000004 C 15.562999999999992 33.010000000000005 15.22799999999999 31.685000000000002 15.45899999999999 30.489000000000004 C 15.68999999999999 29.294000000000004 16.43599999999999 28.235000000000003 17.391999999999992 27.481000000000005 C 18.369999999999994 26.711000000000006 19.717999999999993 26.066000000000006 20.962999999999994 25.909000000000006 C 21.048999999999992 25.707000000000004 21.066999999999993 25.666000000000007 21.067999999999994 25.452000000000005 C 21.068999999999996 25.280000000000005 21.130999999999993 25.141000000000005 21.140999999999995 24.974000000000004 C 21.164999999999996 24.587000000000003 21.138999999999996 24.188000000000002 21.138999999999996 23.800000000000004 C 21.138999999999996 23.302000000000003 21.222999999999995 22.727000000000004 21.122999999999998 22.241000000000003 C 21.089999999999996 22.082000000000004 21.054 21.943000000000005 20.994999999999997 21.806000000000004 C 20.973999999999997 21.757000000000005 20.970999999999997 21.698000000000004 20.945999999999998 21.647000000000006 C 20.915 21.583000000000006 20.849999999999998 21.545000000000005 20.863999999999997 21.462000000000007 C 20.884999999999998 21.458000000000006 20.892999999999997 21.383000000000006 20.913999999999998 21.37900000000001 L 20.854999999999997 21.308000000000007 C 20.870999999999995 21.308000000000007 20.897999999999996 21.37900000000001 20.913999999999998 21.37900000000001 C 20.198999999999998 21.37900000000001 19.496999999999996 21.247000000000007 18.787999999999997 21.29800000000001 C 18.062999999999995 21.35100000000001 17.343999999999998 21.48800000000001 16.648999999999997 21.704000000000008 C 15.282999999999998 22.128000000000007 14.008999999999997 22.85300000000001 12.960999999999997 23.828000000000007 C 11.195999999999996 25.470000000000006 10.090999999999998 27.804000000000006 9.938999999999997 30.210000000000008 C 9.890999999999996 30.96700000000001 9.934999999999997 31.72500000000001 10.017999999999997 32.47800000000001 C 10.094999999999997 33.17400000000001 10.122999999999998 33.92500000000001 10.466999999999997 34.54400000000001 C 11.490999999999996 36.38600000000001 12.754999999999997 37.90200000000001 14.504999999999997 39.11200000000001 C 14.959999999999997 39.42700000000001 15.436999999999998 39.71800000000001 15.953999999999997 39.91600000000001 C 16.767999999999997 40.22700000000001 17.654999999999998 40.29500000000001 18.526999999999997 40.28800000000001 C 19.782999999999998 40.27800000000001 21.037 40.11800000000001 22.255999999999997 39.81500000000001 C 23.813999999999997 39.42800000000001 25.200999999999997 38.92600000000001 26.328999999999997 37.741000000000014 C 27.354999999999997 36.66300000000001 28.060999999999996 35.305000000000014 28.507999999999996 33.89400000000001 C 29.125999999999994 31.943000000000012 29.286999999999995 29.882000000000012 29.443999999999996 27.84100000000001 C 29.497999999999994 27.144000000000013 29.550999999999995 26.446000000000012 29.604999999999997 25.749000000000013 C 29.682999999999996 24.740000000000013 29.757999999999996 23.727000000000015 29.737 22.714000000000013 C 29.726 22.198000000000015 29.691999999999997 21.683000000000014 29.616999999999997 21.17200000000001 C 29.548 20.69400000000001 29.333999999999996 20.185000000000013 29.31 19.71800000000001 C 29.394 19.74100000000001 29.485999999999997 19.77500000000001 29.561999999999998 19.82200000000001 C 29.717999999999996 19.91900000000001 29.869999999999997 20.04600000000001 30.029999999999998 20.13500000000001 C 32.232 21.354 34.543 21.946 37.053 21.946 C 37.037 21.946 36.727 21.946 36.711 21.946"
+                                        stroke-linecap="round" />
+                                </g>
+                            </g>
+                            </g>
+                        </svg>
+                        <span class="sr-only">Tiktok</span>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333333 333333"
+                            shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                            image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" class="size-10">
+                            <path
+                                d="M329930 100020s-3254-22976-13269-33065c-12691-13269-26901-13354-33397-14124-46609-3396-116614-3396-116614-3396h-122s-69973 0-116608 3396c-6522 793-20712 848-33397 14124C6501 77044 3316 100020 3316 100020S-1 126982-1 154001v25265c0 26962 3315 53979 3315 53979s3254 22976 13207 33082c12685 13269 29356 12838 36798 14254 26685 2547 113354 3315 113354 3315s70065-124 116675-3457c6522-770 20706-848 33397-14124 10021-10089 13269-33090 13269-33090s3319-26962 3319-53979v-25263c-67-26962-3384-53979-3384-53979l-18 18-2-2zM132123 209917v-93681l90046 46997-90046 46684z"
+                                fill="red" />
+                        </svg>
+                        <span class="sr-only">YouTube</span>
+                    </a>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-lg font-medium">Contact Us</h3>
+                <div class="space-y-2 text-sm text-gray-800 flex flex-col">
+                    <a href="mailto:gatheringsi.ug@gmail.com"
+                        class="hover:text-purple-600 transition-transform transform hover:translate-x-2 transition-colors">>
+                        GatheringSI.ug@gmail.com
+                    </a>
+
+                    <a href="https://wa.me/+6287720539816"
+                        class="hover:text-purple-600 transition-transform transform hover:translate-x-2  transition-colors">>
+                        +62
+                        877-2053-9816
+                    </a>
+                    <a href="https://wa.me/+6281314532604"
+                        class="hover:text-purple-600 transition-transform transform hover:translate-x-2  transition-colors">>
+                        +62
+                        813-1453-2604
+                    </a>
+                    <a href="https://wa.me/+6285216688901"
+                        class="hover:text-purple-600 transition-transform transform hover:translate-x-2  transition-colors">>
+                        +62
+                        852-1668-8901
+                    </a>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <h3 class="text-lg font-medium">Links</h3>
+                <nav class="flex flex-col space-y-2 text-sm text-gray-800">
+                    <a class="hover:text-purple-600 transition-colors transition-transform transform hover:translate-x-2"
+                        href="/">
+                        > Home
+                    </a>
+                    <a class="hover:text-purple-600 transition-colors transition-transform transform hover:translate-x-2"
+                        href="#persyaratan">
+                        > Persyaratan
+                    </a>
+                    <a class="hover:text-purple-600 transition-colors transition-transform transform hover:translate-x-2"
+                        href="#alur_pendaftaran">
+                        > Alur Pendaftaran
+                    </a>
+                    <a class="hover:text-purple-600 transition-colors transition-transform transform hover:translate-x-2"
+                        href="#struktur_panitia">
+                        > Struktur Kepanitiaan
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <div class="pb-2 flex items-center justify-center border-t mt-6 pt-4 bg-purple-800">
+            <p class="text-sm text-white">&copy; PANITIA GATHERING SISTEM INFORMASI UG 2024, All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- END FOOTER -->
+    <!-- END FOOTER -->
+    <!-- END FOOTER -->
+
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const scrollDownElement = document.querySelector('a[scroll-down]');
+            const headerElement = document.getElementById('navigation')
+            const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+            if (scrollPosition > 0) {
+                scrollDownElement.style.display = 'none';
+                headerElement.classList.add('bg-purple-800')
+            } else {
+                scrollDownElement.style.display = 'flex';
+                headerElement.classList.remove('bg-white')
+            }
+        });
+    </script>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease',
+            once: true,
+        });
+    </script>
+
+</body>
+
+</html>
